@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Test from './My/Test.js';
+import Welcome from './My/Welcome.js';
 
 function App() {
   return (
@@ -7,7 +9,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello world!
+          Hello this is from App.js file!
+          <Test></Test>
+          <Test name="Omuk" age="100"></Test>
+          <Welcome></Welcome>
         </p>
         <a
           className="App-link"
