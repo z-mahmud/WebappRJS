@@ -16,6 +16,30 @@ export default class Signup extends Component {
     var inputvalue = event.target.value;
 
     this.setState({ [inputname]: inputvalue });
+
+    if (inputname === "fname") {
+      var namePattern = /^([a-zA-Z ]){2,30}$/;
+      if (!namePattern.test(inputvalue)) {
+        this.setState({ fname: "Wrong!!!" });
+      }
+    }
+    if (inputname === "lname") {
+      namePattern = /^([a-zA-Z ]){2,30}$/;
+      if (!namePattern.test(inputvalue)) {
+        this.setState({ lname: "Wrong!!!" });
+      }
+    }
+    if (inputname === "email") {
+      var emailPattern = /\S+@\S+\./;
+      if (!emailPattern.test(inputvalue)) {
+        this.setState({ email: "Wrong!!!" });
+      }
+    }
+    if (inputname === "fnumber") {
+      if (!Number(inputvalue)) {
+        this.setState({ fnumber: "Wrong!!!" });
+      }
+    }
   };
 
   render() {
@@ -35,7 +59,7 @@ export default class Signup extends Component {
           ></input>
           <input
             onChange={this.onChangeHandler}
-            name="lanem"
+            name="lname"
             type="test"
             placeholder="Last Name"
           ></input>

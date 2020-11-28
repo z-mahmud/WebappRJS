@@ -8,7 +8,10 @@ import "./App.css";
 // import Domedemo from "./My/Domedemo";
 // import Domedemonode from "./My/Domedemonode.js";
 // import Form from "./My/Form.js";
-import Signup from "./My/Signup";
+// import Signup from "./My/Signup";
+// import Textarea from "./My/Textarea.js";
+// import SelecT from "./My/Select.js";
+// import List from "./My/List.js";
 
 function App() {
   return (
@@ -25,7 +28,10 @@ function App() {
           {/* <Domedemo></Domedemo> */}
           {/* <Domedemonode></Domedemonode> */}
           {/* <Form></Form> */}
-          <Signup></Signup>
+          {/* <Signup></Signup> */}
+          {/* <Textarea></Textarea> */}
+          {/* <SelecT></SelecT> */}
+          {/* <List></List> */}
         </p>
       </header>
     </div>
