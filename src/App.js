@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-//import Buttonbootstrap from './My/Buttonbootstrap.js';
+// import Buttonbootstrap from "./My/Buttonbootstrap.js";
 //import Valuepassfunc from './My/Valuepassfunc';
 //import Arrow from './My/Arrow.js';
 //import State from './My/State';
@@ -12,6 +12,9 @@ import "./App.css";
 // import Textarea from "./My/Textarea.js";
 // import SelecT from "./My/Select.js";
 // import List from "./My/List.js";
+// import "./My.scss";
+import CountryList from "./My/CountryList.js";
+import Post from "./My/Post.js";
 
 function App() {
   return (
@@ -19,7 +22,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is from app.js
+          <h1 className="TextStyle">This is from app.js</h1>
           {/* <Valuepassfunc name="function"></Valuepassfunc> */}
           {/* <Buttonbootstrap></Buttonbootstrap> */}
           {/* <Arrow/> */}
@@ -32,6 +35,9 @@ function App() {
           {/* <Textarea></Textarea> */}
           {/* <SelecT></SelecT> */}
           {/* <List></List> */}
+          {/* <h1 className="SScssclass">Test</h1> */}
+          <Post></Post>
+          <CountryList></CountryList>
         </p>
       </header>
     </div>

@@ -1,0 +1,8 @@
+$nameColor: red;
+$bgColor: gray;
+$myPadding: 50px;
+.Scssclass {
+  color: $nameColor;
+  background-color: $bgColor;
+  padding: $myPadding;
+}
