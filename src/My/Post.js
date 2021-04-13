@@ -5,14 +5,14 @@ export default class Post extends Component {
   constructor() {
     super();
     this.state = {
-      postdata: [],
-      postres: [],
+      postdata: "",
+      postres: "",
     };
   }
 
   onChangeHandler = (event) => {
     var mydata = event.target.value;
-    this.state({ postdata: mydata });
+    this.setState({ postdata: mydata });
   };
 
   onClickHandler = () => {
@@ -23,7 +23,7 @@ export default class Post extends Component {
         alert(this.state.postres);
       })
       .catch((error) => {
-        alert("Wrong!");
+        alert("ERROR!");
       });
   };
 

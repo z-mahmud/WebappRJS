@@ -13,8 +13,11 @@ import "./App.css";
 // import SelecT from "./My/Select.js";
 // import List from "./My/List.js";
 // import "./My.scss";
-import CountryList from "./My/CountryList.js";
-import Post from "./My/Post.js";
+// import CountryList from "./My/CountryList.js";
+//import Post from "./My/Post.js";
+import Myroute from "./component/myroute.js";
+import Mynav from "./component/mynav.js";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
@@ -36,8 +39,12 @@ function App() {
           {/* <SelecT></SelecT> */}
           {/* <List></List> */}
           {/* <h1 className="SScssclass">Test</h1> */}
-          <Post></Post>
-          <CountryList></CountryList>
+          {/* <Post></Post> */}
+          {/* <CountryList></CountryList> */}
+          <BrowserRouter>
+            <Mynav></Mynav>
+            <Myroute></Myroute>
+          </BrowserRouter>
         </p>
       </header>
     </div>
