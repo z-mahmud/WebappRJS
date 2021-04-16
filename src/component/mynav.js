@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default class mynav extends Component {
   render() {
@@ -7,13 +7,19 @@ export default class mynav extends Component {
       <div>
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <NavLink activeStyle={{ color: "green" }} to="/home">
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink activeStyle={{ color: "green" }} to="/about">
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink activeStyle={{ color: "green" }} to="/contact">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
